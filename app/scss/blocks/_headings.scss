@@ -1,0 +1,17 @@
+.heading {
+  &__footer {
+
+    @include fluid-text(16, 15);
+
+    line-height: 2em;
+  }
+
+  &__services {
+    margin-bottom: 38px;
+    color: $color-dark;
+  }
+  &__modal{
+    text-align: center;
+    margin-bottom: 10px;
+  }
+}

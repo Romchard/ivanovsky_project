@@ -1,0 +1,50 @@
+.link {
+  @include reset-link;
+
+  @include flex-center(true);
+
+
+  &__footer {
+    @include flex-center(false);
+    padding-inline: 8px;
+    height: $button-height;
+  }
+
+  &__hero {
+    position: relative;
+
+    @include flex-center(false);
+
+    max-width: 410px;
+
+    margin-inline: auto;
+
+    padding-inline: 17px;
+    height: 70px;
+    background-color: $color-red;
+    color: $color-light;
+    transition: $transition-all;
+    z-index: 100;
+
+    @include hover {
+      & {
+        color: $color-dark;
+      }
+      & span {
+        width: 100%;
+        z-index: -1;
+      }
+
+    }
+
+    & span {
+      position: absolute;
+      content: "";
+      left: 0;
+      width: 8px;
+      height: 100%;
+      background-color: $color-light;
+      transition: $transition-all;
+    }
+  }
+}

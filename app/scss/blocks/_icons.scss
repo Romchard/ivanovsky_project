@@ -1,0 +1,8 @@
+.icon {
+
+  @include flex-center(true);
+
+  &__footer {
+    color: $color-red;
+  }
+}

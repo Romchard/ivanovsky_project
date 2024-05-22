@@ -1,0 +1,25 @@
+.header {
+  position: relative;
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  padding-block: 40px;
+  text-align: center;
+  background-color: $color-dark;
+  z-index: 100;
+  margin-bottom: 68px;
+
+  & img {
+    mix-blend-mode: color;
+  }
+
+  & h1 {
+
+    @include fluid-text(32, 20);
+    max-width: 613px;
+    line-height: 1.5em;
+
+  }
+}

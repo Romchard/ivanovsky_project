@@ -1,1 +1,13 @@
 @import 'normalize', 'fonts', 'mixins', 'media', 'variables', 'utils', 'globals';
+
+@import "blocks/buttons";
+@import "blocks/icons";
+@import "blocks/links";
+@import "blocks/headings";
+@import "blocks/modals";
+@import "blocks/sections";
+@import "blocks/header";
+@import "blocks/hero";
+@import "blocks/services";
+@import "blocks/trainers";
+@import "blocks/footer";

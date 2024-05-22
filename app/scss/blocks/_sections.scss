@@ -1,0 +1,82 @@
+.section {
+  position: relative;
+
+  &.section__hero {
+    height: 1000px;
+
+    &::before {
+      position: absolute;
+      content: "";
+      inset: 0 0 0 0;
+      background: url("../assets/img/bg.jpeg") no-repeat fixed;
+      background-size: cover;
+      z-index: -1;
+    }
+  }
+
+
+  &__services {
+    padding-block: 60px;
+    background-color: $color-light;
+  }
+
+  &__trainers {
+    padding-block: 60px;
+
+    &-inner {
+      background-color: $color-blue;
+      padding: 34px 40px;
+
+      @include mobile {
+        background-color: transparent;
+        overflow-x: auto;
+      }
+
+    }
+
+    &-list {
+      display: flex;
+      align-items: center;
+      gap: 58px;
+      font-family: $font-family-secondary;
+      letter-spacing: 2px;
+
+      @include mobile {
+        gap: 16px;
+      }
+
+    }
+
+    &-item {
+      @include mobile {
+
+        @include flex-center(true);
+
+        min-height: 166px;
+        padding: 20px 10px;
+        background-color: $color-blue;
+      }
+    }
+
+    &-item:nth-child(1) {
+      max-width: 376px;
+      @include mobile {
+        min-width: 100%;
+      }
+    }
+
+    &-item:nth-child(2) {
+      max-width: 287px;
+      @include mobile {
+        min-width: 100%;
+      }
+    }
+
+    &-item:nth-child(3) {
+      max-width: 242px;
+      @include mobile {
+        min-width: 100%;
+      }
+    }
+  }
+}

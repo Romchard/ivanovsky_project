@@ -1,0 +1,29 @@
+//colors
+
+$color-light: #FFFFFF;
+$color-dark: #1E1D1B;
+$color-red: #CB2113;
+$color-blue: #034468;
+$color-opacity-dark: rgba($color-dark, 0.3);
+
+//container
+$container-width: 1100px;
+$container-padding-x: 50px;
+$container-padding-x-tablet: 30px;
+$container-padding-x-mobile: 15px;
+
+//height
+$button-height: 50px;
+$input-height: 48px;
+
+//radius
+$border-radius-medium: 20px;
+$border-radius-big: 30px;
+
+//fonts
+$font-family-base: 'Radiotechnika', sans-serif;
+$font-family-secondary: 'Roboto', sans-serif;
+
+//transition
+$transition-duration: .2s;
+$transition-all: all .2s linear;
