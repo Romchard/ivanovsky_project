@@ -10,7 +10,9 @@
     margin-bottom: 38px;
     color: $color-dark;
   }
-  &__modal{
+
+  &__modal {
+    @include fluid-text(36, 18);
     text-align: center;
     margin-bottom: 10px;
   }

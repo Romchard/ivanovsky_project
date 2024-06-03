@@ -26,6 +26,9 @@
     &-inner {
       background-color: $color-blue;
       padding: 34px 40px;
+      @include mobile {
+        padding: unset;
+      }
 
       @include mobile {
         background-color: transparent;

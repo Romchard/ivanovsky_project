@@ -24,10 +24,16 @@
     border-radius: $border-radius-medium;
     color: $color-dark;
 
+    @include tablet {
+      padding: 60px 20px;
+      max-height: 100%;
+      overflow-y: auto;
+    }
+
     @include mobile {
       flex-direction: column;
       max-height: 100%;
-      padding: 50px;
+      padding: 60px 25px;
       overflow-y: auto;
     }
   }
@@ -76,7 +82,7 @@
 
   &__content {
     display: flex;
-    flex-flow: column wrap;
+    flex-direction: column;
 
     &-img {
       background-color: $color-opacity-dark;
@@ -123,6 +129,11 @@
   &__info {
     display: flex;
     flex-flow: column wrap;
+
+    &-wrapper {
+      display: flex;
+      flex-flow: column wrap;
+    }
 
     &-trainer {
       text-align: center;

@@ -58,6 +58,10 @@
       row-gap: 30px;
       column-gap: 23px;
 
+      @include mobile{
+        justify-content: center;
+      }
+
     }
 
     &-item {
@@ -67,6 +71,10 @@
       text-align: center;
       color: $color-dark;
       background-color: $color-light;
+
+      @include mobile{
+        max-width: unset;
+      }
     }
 
     & img {
